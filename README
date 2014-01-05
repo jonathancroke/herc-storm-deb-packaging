@@ -1,0 +1,13 @@
+export JAVA_HOME=/opt/java
+sudo apt-get install pkg-config
+sudo apt-get install libtool
+sudo apt-get install autoconf
+sudo apt-get install libzmq-dev
+./build_jzmq.sh
+
+sudo apt-get install curl
+sudo apt-get install uuid-dev
+./build_libzmq.sh
+./build_storm.sh
+
+mv *.deb ../herc-storm-debs
