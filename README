@@ -10,4 +10,8 @@ sudo apt-get install uuid-dev
 ./build_libzmq.sh
 ./build_storm.sh
 
+Peek at architecture specific files
+ls *.deb
+And change storm build to same arch.
+mv storm_0.8.1_all.deb storm_0.8.1_all_<arch>.deb
 mv *.deb ../herc-storm-debs
